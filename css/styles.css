@@ -103,6 +103,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: inherit;
+  transition: color var(--transition-timing-function);
 }
 
 .header-link:hover,
@@ -260,17 +261,19 @@ img {
 }
 
 .skills-example {
-  display: inline-block;
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
-  height: 70px;
-  background-color: rgba(47, 48, 58, 0.8);
+  height: 100%;
 }
 
 .skills-example-text {
-  margin-top: 27px;
-  margin-bottom: 27px;
+  position: absolute;
+  bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 370px;
+  height: 70px;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -279,6 +282,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 .skills-list .skills-item + .skills-item {
@@ -598,8 +602,7 @@ img {
   transition: transform var(--transition-timing-function);
 }
 
-.portfolio-item:hover .portfolio-overlay,
-.portfolio-item:focus .portfolio-overlay {
+.portfolio-item .link:hover .portfolio-overlay {
   transform: translateY(0);
 }
 
@@ -634,6 +637,7 @@ img {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
 
 .modal {
@@ -647,6 +651,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  transition: transform var(--transition-timing-function);
 }
 
 .backdrop.is-hidden .modal {
@@ -664,6 +669,9 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-icon {

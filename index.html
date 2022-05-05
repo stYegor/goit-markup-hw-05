@@ -59,15 +59,7 @@
         <div class="container">
           <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
-          <div class="backdrop is-hidden"data-modal>
-            <div class="modal">
-              <button type="button" class="modal-btn" data-modal-close>
-                <svg class="modal-icon" width="11" height="11">
-                  <use href="./images/icons.svg#icon-vector">
-                </svg>
-              </button>
-            </div>
-          </div>
+
         </div>
       </section>
       <section class="making section">
@@ -130,32 +122,32 @@
           <h2 class="skills-text">Чем мы занимаемся</h2>
           <ul class="skills-list list">
             <li class="skills-item">
-              <img
-                src="./images/img1.jpg"
-                alt="Десктопное приложение"
-                width="370"
-              />
               <div class="skills-example">
+                <img
+                  src="./images/img1.jpg"
+                  alt="Десктопное приложение"
+                  width="370"
+                />
                 <h3 class="skills-example-text">Десктопные приложения</h3>
-              </div>
+             </div>
             </li>
             <li class="skills-item">
-              <img
-                src="./images/img2.jpg"
-                alt="Мобильное приложение"
-                width="370"
-              />
               <div class="skills-example">
+                <img
+                  src="./images/img2.jpg"
+                  alt="Мобильное приложение"
+                  width="370"
+                />
                 <h3 class="skills-example-text">Мобильные приложения</h3>
               </div>
             </li>
             <li class="skills-item">
+              <div class="skills-example">
               <img
                 src="./images/img3.jpg"
                 alt="Дизайнерские задачи"
                 width="370"
               />
-              <div class="skills-example">
                 <h3 class="skills-example-text">Дизайнерские решения</h3>
               </div>
             </li>
@@ -442,6 +434,15 @@
         </div>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
+    <div class="backdrop is-hidden"data-modal>
+    <div class="modal">
+      <button type="button" class="modal-btn" data-modal-close>
+        <svg class="modal-icon" width="11" height="11">
+          <use href="./images/icons.svg#icon-vector">
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
   </body>
 </html>
